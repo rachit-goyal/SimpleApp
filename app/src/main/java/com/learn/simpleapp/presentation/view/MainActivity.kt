@@ -30,11 +30,11 @@ class MainActivity : AppCompatActivity() {
             } else if (binding.lastName.text?.length == 0) {
                 binding.lastName.error = "Field Can not be empty"
 
-            } else if (binding.email.text?.length == 0 || isValidEmail(binding.email.text)) {
-                binding.lastName.error = "Please check email"
+            } else if (binding.email.text?.length == 0 || !isValidEmail(binding.email.text)) {
+                binding.email.error = "Please check email"
 
             } else if (binding.city.text?.length == 0) {
-                binding.lastName.error = "Field Can not be empty"
+                binding.city.error = "Field Can not be empty"
 
             } else {
 
